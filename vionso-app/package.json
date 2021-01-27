@@ -2,7 +2,7 @@
   "name": "vionso-app",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://nelsonmanuelgm.github.io/vionso/",
+  "homepage": "https://NelsonManuelGM.github.io/vionso",
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.9",
     "@testing-library/react": "^11.2.3",
@@ -34,7 +34,7 @@
   },
   "scripts": {
     "predeploy": "npm run build",
-    "deploy": "gh-pages -b deploy -d build",
+    "deploy": "gh-pages -b test_deploy -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
