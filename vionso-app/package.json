@@ -2,7 +2,7 @@
   "name": "vionso-app",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://vionso.com",
+  "homepage": "https://nelsonmanuelgm.github.io/vionso/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.9",
     "@testing-library/react": "^11.2.3",
