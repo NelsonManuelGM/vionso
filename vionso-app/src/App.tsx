@@ -1,13 +1,9 @@
-import React from 'react';
+import InProgress from './components/inProgress'
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <h1>
-          VIONSO.
-        </h1>
-      </header>
+        <InProgress/>
     </div>
   );
 }
