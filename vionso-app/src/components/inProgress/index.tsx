@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 import img1 from '../../assets/1d.png';
 import img2 from '../../assets/2d.png';
 import {useEffect, useState} from "react";
@@ -10,35 +10,30 @@ const Box = styled.div`
   align-items: center;
   width: 100%;
   height: 100vh;
-  
-  @media (max-width: 900px){
+
+  @media (max-width: 900px) {
     flex-direction: column;
   }
 `;
 
-const smallSize = () => {
+const smallSize = ():boolean => {
     return window.innerWidth < 426
 }
 
 
 const InProgress = () => {
-    const [size, setSize] = useState<number>(500);
     const [small, setSmall] = useState<boolean>(smallSize());
 
-
-    useEffect(()=>{
-
+    useEffect(() => {
         const event = () => {
             const _resolution = smallSize();
             if (_resolution !== small) {
                 setSmall(_resolution)
             }
-
         }
-
         window.addEventListener('resize', event);
 
-    },[small])
+    }, [small])
 
     return (
         <Box>
